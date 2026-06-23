@@ -29,64 +29,113 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 </head>
 
 <body class="bg-[#faf8f3] overflow-x-hidden">
+   <!-- Navbar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/10">
 
-    <!-- Navbar -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
 
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between h-24">
 
-            <div class="flex items-center justify-between h-24">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
 
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center">
+                <img src="images/logo1.png"
+                    alt="Tradzio International"
+                    class="h-16 md:h-20 lg:h-24 w-auto object-contain">
 
-                    <img src="images/logo1.png" alt="Tradzio International" class="h-19 lg:h-24 w-auto object-contain">
+            </a>
 
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-10">
+
+                <a href="index.html"
+                    class="relative text-white font-medium hover:text-[#C9A227] transition">
+                    Home
                 </a>
 
-                <!-- Menu -->
-                <nav class="hidden lg:flex items-center gap-10">
-
-                    <a href="index.html"
-                        class="relative text-white font-medium hover:text-[#C9A227] transition duration-300 after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-[2px] after:bg-[#C9A227] after:transition-all hover:after:w-full">
-                        Home
-                    </a>
-
-                    <a href="about.html"
-                        class="relative text-white font-medium hover:text-[#C9A227] transition duration-300 after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-[2px] after:bg-[#C9A227] after:transition-all hover:after:w-full">
-                        About
-                    </a>
-
-                    <a href="products.html"
-                        class="relative text-white font-medium hover:text-[#C9A227] transition duration-300 after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-[2px] after:bg-[#C9A227] after:transition-all hover:after:w-full">
-                        Products
-                    </a>
-
-                    <a href="whyus.html"
-                        class="relative text-white font-medium hover:text-[#C9A227] transition duration-300 after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-[2px] after:bg-[#C9A227] after:transition-all hover:after:w-full">
-                        Why Us
-                    </a>
-
-                    <a href="contact.html"
-                        class="relative text-white font-medium hover:text-[#C9A227] transition duration-300 after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-[2px] after:bg-[#C9A227] after:transition-all hover:after:w-full">
-                        Contact
-                    </a>
-
-                </nav>
-
-                <!-- CTA Button -->
-                <a href="tel: 7869824461 / 8319559934"
-                    class="hidden lg:inline-flex items-center px-6 py-3 bg-[#C9A227] text-white rounded-full font-medium hover:bg-[#b18f20] transition duration-300 shadow-lg">
-
-                    Get Quote
-
+                <a href="about.html"
+                    class="relative text-white font-medium hover:text-[#C9A227] transition">
+                    About
                 </a>
 
-            </div>
+                <a href="products.html"
+                    class="relative text-white font-medium hover:text-[#C9A227] transition">
+                    Products
+                </a>
+
+                <a href="whyus.html"
+                    class="relative text-white font-medium hover:text-[#C9A227] transition">
+                    Why Us
+                </a>
+
+                <a href="contact.html"
+                    class="relative text-white font-medium hover:text-[#C9A227] transition">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Desktop CTA -->
+            <a href="tel:+917869824461"
+                class="hidden lg:inline-flex items-center px-6 py-3 bg-[#C9A227] text-white rounded-full font-medium hover:bg-[#b18f20] transition shadow-lg">
+
+                Get Quote
+
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button id="menu-btn"
+                class="lg:hidden text-white text-3xl">
+
+                ☰
+
+            </button>
 
         </div>
 
-    </header>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden lg:hidden bg-[#111] border-t border-white/10">
+
+        <div class="flex flex-col px-6 py-6 space-y-5">
+
+            <a href="index.html"
+                class="text-white hover:text-[#C9A227] transition">
+                Home
+            </a>
+
+            <a href="about.html"
+                class="text-white hover:text-[#C9A227] transition">
+                About
+            </a>
+
+            <a href="products.html"
+                class="text-white hover:text-[#C9A227] transition">
+                Products
+            </a>
+
+            <a href="whyus.html"
+                class="text-white hover:text-[#C9A227] transition">
+                Why Us
+            </a>
+
+            <a href="contact.html"
+                class="text-white hover:text-[#C9A227] transition">
+                Contact
+            </a>
+
+            <a href="tel:+917869824461"
+                class="inline-block text-center px-6 py-3 bg-[#C9A227] text-white rounded-full font-medium">
+                Get Quote
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
 
     <!-- Hero Section -->
     <section class="relative overflow-hidden  bg-gradient-to-br from-[#C9A227]  via-white to-[#f5e8c7]">
@@ -1389,7 +1438,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 <p class="text-gray-500 text-center">
                     Designed & Developed By
                     <span class="text-[#C9A227] font-semibold">
-                        Company All Rights & Services
+                         Company All Rights & Services
                     </span>
                 </p>
 
@@ -1401,7 +1450,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 </footer>
 
-
+<!--Slider-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         new Swiper(".productGallery", {
@@ -1432,7 +1481,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         });
     </script>
 
+<!--menu-->
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+
+    if (mobileMenu.classList.contains("hidden")) {
+        menuBtn.innerHTML = "☰";
+    } else {
+        menuBtn.innerHTML = "✕";
+    }
+});
+</script>
 </body>
 
 </html>
